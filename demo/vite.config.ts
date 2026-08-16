@@ -14,7 +14,7 @@ export default defineConfig({
         protocol: 'mission-surface-prototype',
         version: bridgeVersion,
         buildRevision: process.env.GITHUB_SHA ?? '0000000000000000000000000000000000000000',
-        pagesOrigin: process.env.MISSION_SURFACE_PAGES_ORIGIN ?? 'https://Peterdesmondmoore.github.io/Sleepy_Mumma_Prototype',
+        pagesOrigin: process.env.MISSION_SURFACE_PAGES_ORIGIN ?? 'https://peterdesmondmoore.github.io/Sleepy_Mumma_Prototype',
         livePrototypeKeys: ['mobile-sample', 'mumma-current'],
         contentSecurityPolicy,
       }, null, 2) })
