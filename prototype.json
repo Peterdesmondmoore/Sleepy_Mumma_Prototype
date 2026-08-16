@@ -3,7 +3,7 @@
   "productKey": "sleepy-mumma",
   "prototypeKey": "prototype-library",
   "title": "Mission Surface Prototype Library",
-  "description": "A mixed-mode collection of stakeholder-ready prototypes discovered by Mission Surface.",
+  "description": "A mixed-mode collection containing the current Mumma mobile experience and the protected Mission Surface baseline samples.",
   "status": "draft",
   "formFactor": "mobile",
   "demoPath": "/demo",

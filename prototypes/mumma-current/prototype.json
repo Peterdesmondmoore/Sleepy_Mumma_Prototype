@@ -4,7 +4,7 @@
   "prototypeKey": "mumma-current",
   "isSample": false,
   "title": "Mumma Sleep Coach — Current Experience",
-  "description": "An interactive, fixture-only mirror of the current Mumma first-use journey, plan confirmation, daily plan, sleep monitoring, reminders, journal, and settings experience.",
+  "description": "An interactive, fixture-only mirror of the current Mumma first-use journey, plan confirmation, daily plan, sleep monitoring, reminders, journal, research, settings, and light or dark appearance.",
   "status": "testing",
   "formFactor": "mobile",
   "deliveryMode": "live",
