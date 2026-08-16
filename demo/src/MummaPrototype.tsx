@@ -67,7 +67,7 @@ export default function MummaPrototype() {
       <section className="mumma-scroll" ref={viewport}>
         {page === 'Welcome' && <RegistrationShell progress={1}>
           <h1>Welcome</h1><p className="mumma-lead">Start with your email address. This prototype stores it only on this device.</p>
-          <form className="mumma-form" onSubmit={e => { e.preventDefault(); if (email) go('About you') }}><label>Email address<input required type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="you@example.com" /></label><button>Continue</button></form>
+          <form className="mumma-form" onSubmit={e => { e.preventDefault(); if (email.trim()) go('About you') }}><label>Email address<input required type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="you@example.com" /></label><button type="submit">Continue</button></form>
           <p className="mumma-privacy">No password or email verification is required in this prototype.</p>
         </RegistrationShell>}
 

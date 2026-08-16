@@ -35,7 +35,7 @@
     "version": 2
   },
   "annotations": [
-    { "page": "Welcome", "items": [{ "number": 1, "x": 50, "y": 48, "content": "Evaluate whether the local-only first-use promise feels clear and reassuring." }] },
+    { "page": "Welcome", "items": [{ "number": 1, "x": 50, "y": 32, "content": "Evaluate whether the local-only first-use promise feels clear and reassuring." }] },
     { "page": "Sleep Coach", "items": [{ "number": 1, "x": 50, "y": 58, "content": "Evaluate whether the Coach makes the next step obvious without implying medical advice." }] },
     { "page": "Plan confirmation", "items": [{ "number": 1, "x": 50, "y": 56, "content": "Evaluate whether explicit confirmation makes it unmistakable that the plan has not changed yet." }] },
     { "page": "Today", "items": [{ "number": 1, "x": 50, "y": 42, "content": "Evaluate whether the next sleep event and current plan are easy to scan while tired or distracted." }] },
