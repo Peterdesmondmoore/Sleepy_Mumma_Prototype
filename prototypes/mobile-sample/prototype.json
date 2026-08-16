@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "productKey": "sleepy-mumma",
+  "prototypeKey": "mobile-sample",
+  "isSample": true,
+  "title": "Mobile Sample",
+  "description": "An interactive baseline walkthrough of the six high-level steps for taking a Mission Surface prototype from starter download to Request dashboard feedback.",
+  "status": "draft",
+  "formFactor": "mobile",
+  "deliveryMode": "live",
+  "fidelity": "simulated",
+  "limitations": [
+    "Uses fixture data",
+    "GitHub connection, publishing, comments, and feedback submission are simulated",
+    "No files are downloaded and no changes are persisted"
+  ],
+  "demoPath": "/demo",
+  "entryRoute": "/#/prototypes/mobile-sample",
+  "pages": [
+    "Start",
+    "Download starter",
+    "Connect GitHub",
+    "Publish or capture",
+    "Verify",
+    "Review and comment",
+    "Submit feedback"
+  ],
+  "integration": {
+    "protocol": "mission-surface-prototype",
+    "version": 2
+  },
+  "annotations": [
+    {
+      "page": "Start",
+      "items": [
+        {
+          "number": 1,
+          "x": 52,
+          "y": 35,
+          "content": "Evaluate whether the complete six-step setup path is understandable before the walkthrough begins."
+        }
+      ]
+    },
+    {
+      "page": "Download starter",
+      "items": [
+        {
+          "number": 1,
+          "x": 50,
+          "y": 46,
+          "content": "Evaluate whether the starter's purpose and governed repository structure are clear."
+        }
+      ]
+    },
+    {
+      "page": "Connect GitHub",
+      "items": [
+        {
+          "number": 1,
+          "x": 50,
+          "y": 49,
+          "content": "Evaluate whether Mission Surface's read-only GitHub access boundary is unmistakable."
+        }
+      ]
+    },
+    {
+      "page": "Publish or capture",
+      "items": [
+        {
+          "number": 1,
+          "x": 50,
+          "y": 50,
+          "content": "Evaluate whether the choice between GitHub Pages and local image preparation is easy to make."
+        }
+      ]
+    },
+    {
+      "page": "Verify",
+      "items": [
+        {
+          "number": 1,
+          "x": 50,
+          "y": 50,
+          "content": "Evaluate whether verification covers both technical integrity and the reviewer-visible experience."
+        }
+      ]
+    },
+    {
+      "page": "Review and comment",
+      "items": [
+        {
+          "number": 1,
+          "x": 58,
+          "y": 56,
+          "content": "Evaluate whether review tools and contextual commenting feel connected to the demonstrated journey."
+        }
+      ]
+    },
+    {
+      "page": "Submit feedback",
+      "items": [
+        {
+          "number": 1,
+          "x": 52,
+          "y": 58,
+          "content": "Evaluate whether the handoff from prototype review to the Request dashboard closes the feedback loop."
+        }
+      ]
+    }
+  ],
+  "createdAt": "2026-08-15",
+  "updatedAt": "2026-08-16",
+  "repositoryKey": "sleepy-mumma-prototype"
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "productKey": "sleepy-mumma",
+  "prototypeKey": "mumma-current",
+  "isSample": false,
+  "title": "Mumma Sleep Coach — Current Experience",
+  "description": "An interactive, fixture-only mirror of the current Mumma first-use journey, plan confirmation, daily plan, sleep monitoring, reminders, journal, and settings experience.",
+  "status": "testing",
+  "formFactor": "mobile",
+  "deliveryMode": "live",
+  "fidelity": "simulated",
+  "limitations": [
+    "Uses deterministic fixture data and does not connect to the Mumma API or AI services",
+    "Account setup, sleep coaching, reminders, monitoring, backup, and reset actions are simulated",
+    "State lasts only for the current browser session and no family information is stored or transmitted"
+  ],
+  "demoPath": "/demo",
+  "entryRoute": "/#/prototypes/mumma-current",
+  "pages": [
+    "Welcome",
+    "About you",
+    "Baby Profile",
+    "Sleep Coach",
+    "Plan confirmation",
+    "Today",
+    "Sleep monitor",
+    "Sleep Reminders",
+    "Baby Journal",
+    "More",
+    "Sleep Research",
+    "Data & Backup"
+  ],
+  "integration": {
+    "protocol": "mission-surface-prototype",
+    "version": 2
+  },
+  "annotations": [
+    { "page": "Welcome", "items": [{ "number": 1, "x": 50, "y": 48, "content": "Evaluate whether the local-only first-use promise feels clear and reassuring." }] },
+    { "page": "Sleep Coach", "items": [{ "number": 1, "x": 50, "y": 58, "content": "Evaluate whether the Coach makes the next step obvious without implying medical advice." }] },
+    { "page": "Plan confirmation", "items": [{ "number": 1, "x": 50, "y": 56, "content": "Evaluate whether explicit confirmation makes it unmistakable that the plan has not changed yet." }] },
+    { "page": "Today", "items": [{ "number": 1, "x": 50, "y": 42, "content": "Evaluate whether the next sleep event and current plan are easy to scan while tired or distracted." }] },
+    { "page": "Sleep monitor", "items": [{ "number": 1, "x": 50, "y": 63, "content": "Evaluate whether logging a sleep or wake event is fast and understandable." }] },
+    { "page": "More", "items": [{ "number": 1, "x": 50, "y": 43, "content": "Evaluate whether profile, research, and data controls are grouped predictably." }] }
+  ],
+  "createdAt": "2026-08-16",
+  "updatedAt": "2026-08-16",
+  "repositoryKey": "sleepy-mumma-prototype"
+}

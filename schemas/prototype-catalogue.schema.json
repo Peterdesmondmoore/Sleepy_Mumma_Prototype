@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peterdesmondmoore.github.io/MS_Prototypes/schemas/prototype-catalogue.schema.json",
+  "title": "Mission Surface prototype catalogue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "productKey", "prototypeKey", "title", "description", "status", "formFactor", "demoPath", "entryRoute", "pages", "createdAt", "updatedAt", "repository", "prototypes"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "productKey": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 120 },
+    "prototypeKey": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 120 },
+    "title": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "description": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "status": { "enum": ["draft", "testing", "approved"] },
+    "formFactor": { "enum": ["mobile", "laptop"] },
+    "demoPath": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "entryRoute": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "pages": { "type": "array", "minItems": 1, "maxItems": 100, "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 500 } },
+    "createdAt": { "type": "string", "format": "date" },
+    "updatedAt": { "type": "string", "format": "date" },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repositoryKey", "repositoryName", "sourceOfTruth", "accessMode", "manifestPattern"],
+      "properties": {
+        "repositoryKey": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 120 },
+        "repositoryName": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "sourceOfTruth": { "const": "github" },
+        "accessMode": { "const": "read-only" },
+        "manifestPattern": { "const": "/prototypes/*/prototype.json" }
+      }
+    },
+    "prototypes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prototypeKey", "isSample", "deliveryMode", "formFactor", "manifestPath"],
+        "properties": {
+          "prototypeKey": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 120 },
+          "isSample": { "type": "boolean", "description": "Mirrors the child manifest and identifies protected Mission Surface baseline samples." },
+          "deliveryMode": { "enum": ["live", "screenshots"] },
+          "formFactor": { "enum": ["mobile", "laptop"] },
+          "manifestPath": { "type": "string", "pattern": "^/prototypes/[a-z0-9]+(?:-[a-z0-9]+)*/prototype\\.json$", "maxLength": 500 }
+        }
+      }
+    }
+  }
+}
